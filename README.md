@@ -1,6 +1,7 @@
 # msaTools
 
-Merging Alignments
+**Merging Alignments**
+
 This code is adapted from the [SEPP](https://github.com/smirarab/sepp) codebase, so you'll need to have a working installation of SEPP. It also requires you to have installed the bundled HMMER executables, although you can play with the config file as necessary. Change the path names to your own, since all of the uploaded ones are my own absolute paths. 
 
 The code is intended to help someone merge two hmmalign results. That is, given a backbone alignment on `{S1, S2, S3, S4}` and two query sequences `x` and `y`, if we build an HMM on `{S1, S2} and another on `{S3, S4}` using HMMER, then align `x` to `{S1, S2}` and align `y$ to `{S3, S4}`, we would like to be able to create a final alignment with `{S1, S2, S3, S4, x, y}`. 
